@@ -16,7 +16,7 @@ When rebuilding or updating sections, make two fetches:
 Do NOT guess or paraphrase content. The live site has:
 - Full course codes and names for Teaching Experience (e.g. "ECON 157 – Behavioral Economics")
 - All 5 bullet points for IMF Work Experience
-- arxiv link for working paper: https://arxiv.org/pdf/2502.00195
+- link for working paper: https://spaces-cdn.owlstown.com/blobs/kzeft0jjkd2hxey1jg0rgzrup334
 - Full author list for working paper: Andrew Caplin, Daniel Martin, Philip Marx, Anastasiia Morozova, Leshan Xu
 
 ## CV file
