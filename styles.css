@@ -168,50 +168,155 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+/* ── Intro contact ────────────────────────────────── */
+.intro-contact {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: -1.8rem;
+  margin-bottom: 2rem;
+}
+
 /* ── Education ────────────────────────────────────── */
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+.edu-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.4rem;
+  gap: 1rem;
+}
+
+.edu-left { flex: 1; }
+
+.edu-right {
+  text-align: right;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .edu-school {
   font-weight: 600;
   color: var(--accent);
   font-size: 0.95rem;
-  margin-bottom: 0.2rem;
+}
+
+.edu-degree {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  margin-top: 0.1rem;
+}
+
+.edu-detail {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+.edu-loc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
 }
 
 .edu-dates {
   font-size: 0.82rem;
   color: var(--muted);
-  margin-bottom: 0.2rem;
+  font-style: italic;
 }
 
-.edu-degree {
+/* ── Professional Experience ──────────────────────── */
+.exp-entry {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.exp-dates {
+  color: var(--muted);
+  white-space: nowrap;
+  min-width: 4.5rem;
+  flex-shrink: 0;
+}
+
+.exp-desc { color: var(--text); }
+
+/* ── Publications ─────────────────────────────────── */
+.pub-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.8rem;
+  margin-top: 1.4rem;
+}
+
+.pub-label:first-child { margin-top: 0; }
+
+.paper {
+  margin-bottom: 1rem;
+}
+
+.paper-citation {
   font-size: 0.9rem;
   color: var(--text);
+  line-height: 1.75;
 }
 
-/* ── Working Paper ────────────────────────────────── */
-.paper-title {
-  font-weight: 600;
-  color: var(--accent);
-  font-size: 0.95rem;
-  margin-bottom: 0.25rem;
+.paper-citation a {
+  color: var(--link);
+  text-decoration: none;
 }
 
-.paper-authors {
-  font-size: 0.85rem;
+.paper-citation a:hover { text-decoration: underline; }
+
+.paper-meta {
   color: var(--muted);
-  margin-bottom: 0.75rem;
+  font-size: 0.88rem;
 }
 
 .paper-abstract {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-top: 0.5rem;
+  padding-left: 0;
+}
+
+/* ── Teaching table ───────────────────────────────── */
+.teaching-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.teaching-table tr { border-bottom: 1px solid var(--divider); }
+.teaching-table tr:last-child { border-bottom: none; }
+
+.teaching-table td {
+  padding: 0.45rem 0;
+  color: var(--text);
+  vertical-align: top;
+}
+
+.teach-term {
+  color: var(--muted);
+  white-space: nowrap;
+  padding-right: 1.5rem;
+  min-width: 6rem;
+}
+
+/* ── Presentations ────────────────────────────────── */
+.pres-list {
+  padding-left: 1.2rem;
   font-size: 0.9rem;
   color: var(--text);
   line-height: 1.8;
 }
+
+.pres-list li { margin-bottom: 0.5rem; }
 
 /* ── Skills / Languages ───────────────────────────── */
 .skills-list {
