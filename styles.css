@@ -177,6 +177,13 @@ h2 {
 }
 
 /* ── Education ────────────────────────────────────── */
+.edu-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin-top: 0.4rem;
+}
+
 .edu-entry {
   display: flex;
   justify-content: space-between;
@@ -422,6 +429,7 @@ h2 {
   }
 
   .two-col { grid-template-columns: 1fr; }
+  .edu-two-col { grid-template-columns: 1fr; }
 
   .headshot { max-width: 320px; }
 }
