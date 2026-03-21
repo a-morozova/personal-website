@@ -177,13 +177,6 @@ h2 {
 }
 
 /* ── Education ────────────────────────────────────── */
-.edu-two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem 2rem;
-  margin-top: 0.4rem;
-}
-
 .edu-entry {
   display: flex;
   justify-content: space-between;
@@ -199,6 +192,11 @@ h2 {
   white-space: nowrap;
   flex-shrink: 0;
 }
+
+.edu-entry--small .edu-school { font-size: 0.85rem; }
+.edu-entry--small .edu-degree { font-size: 0.78rem; }
+.edu-entry--small .edu-loc    { font-size: 0.78rem; }
+.edu-entry--small .edu-dates  { font-size: 0.75rem; }
 
 .edu-school {
   font-weight: 600;
@@ -429,7 +427,6 @@ h2 {
   }
 
   .two-col { grid-template-columns: 1fr; }
-  .edu-two-col { grid-template-columns: 1fr; }
 
   .headshot { max-width: 320px; }
 }
