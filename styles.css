@@ -291,6 +291,40 @@ h2 {
   font-size: 0.88rem;
 }
 
+.paper-abstract-toggle {
+  margin-top: 0.45rem;
+}
+
+.paper-abstract-toggle summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--link);
+  font-size: 0.85rem;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.paper-abstract-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.paper-abstract-toggle summary::before {
+  content: "+";
+  width: 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.paper-abstract-toggle[open] summary::before {
+  content: "−";
+}
+
+.paper-abstract-toggle summary:hover {
+  text-decoration: underline;
+}
+
 .paper-abstract {
   font-size: 0.88rem;
   color: var(--muted);
